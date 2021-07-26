@@ -6,7 +6,7 @@ let socket: Socket;
 const CONNECTION = "musk-chat-app.herokuapp.com/";
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
-  const [room, setRoom] = useState(0);
+  const [room, setRoom] = useState("");
   const [userName, setUserName] = useState("");
   const [message, setMessage] = useState("");
   const [messageList, setMessageList] = useState<any[]>([]);
@@ -26,7 +26,7 @@ function App() {
   };
   const sendText = async () => {
     let messageContent: {
-      room: number;
+      room : string;
       content: { author: string; message: string };
     } = {
       room: room,
@@ -55,7 +55,7 @@ function App() {
               type="number"
               placeholder="Room..."
               onChange={(e) => {
-                setRoom(e.target.valueAsNumber);
+                setRoom(e.target.value);
               }}
             />
           </div>

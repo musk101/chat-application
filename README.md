@@ -21,7 +21,7 @@
 
 
 ## Backend Repository?
-- [![Click]](https://github.com/musk101/chat-app-backend)
+- [[Click]](https://github.com/musk101/chat-app-backend)
 
 ## Contributors
 

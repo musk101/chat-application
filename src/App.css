@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  overflow: scroll;
 }
 .App {
   display: grid;
@@ -12,8 +13,8 @@ body {
 .logIn {
   width: 600px;
   height: 350px;
-  border: 5px solid #0091ff;
-  border-radius: 10px;
+  border: 10px solid hsl(56, 100%, 50%);
+  border-radius: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +25,7 @@ body {
   margin: 10px;
   width: 200px;
   height: 40px;
-  border: 2px solid #0091ff;
+  border: 5px solid #093577;
   background-color: transparent;
   padding-left: 10px;
   color: white;
@@ -40,7 +41,7 @@ body {
   width: 200px;
   height: 50px;
   border: none;
-  background-color: #0091ff;
+  background-color: #146fb4;
   color: white;
   font-size: 16px;
   margin-top: 45px;
@@ -54,16 +55,18 @@ body {
 .chatContainer {
   width: 600px;
   height: 350px;
-  border: 5px solid #0091ff;
+  border: 10px solid #FF6767;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 }
 
 .chatContainer .messages {
   flex: 80%;
   width: 100%;
   padding-left: 20px;
+  
 }
 
 .chatContainer .messageInputs {
@@ -71,6 +74,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
+  
 
 }
 
@@ -78,23 +82,26 @@ body {
   flex: 80%;
   height: calc(100% -5px);
   border: none;
-  border-top: 5px solid #0091ff;
+  border-top: 5px solid;
   padding-left: 20px;
   font-size: 20px;
+
 }
 
 .chatContainer .messageInputs button{
   flex: 20%;
   height: 100%;
-  background-color: #0091ff;
+  background-color: #FFA0A0;
   border: none;
   color: white;
   font-size: 18px;
+  
 }
 
 .messageContainer {
   display: flex;
   width: calc(100% - 30px);
+ 
 }
 
 .messageContainer h1{
@@ -117,12 +124,12 @@ body {
   color: black;
 }
 .messageIndividual {
-  width: 200px;
-  height: 60px;
+  width: 220px;
+  height: 120px;
   border-radius: 10px;
   display: grid;
   place-items: center;
-  background-color: #0091ff;
+  background-color: #FF3D68;
   opacity: 0.9;
   color: white;
   font-family: Arial, Helvetica, sans-serif;

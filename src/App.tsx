@@ -88,13 +88,15 @@ function App() {
           <button onClick={connectToRoom}>Enter Chat</button>
         </div>
       ) : (
+       
         <div className="chatContainer">
-          <Checkbox
+         
+          {/* <Checkbox
             value={checked}
             color="primary"
             onChange={handleChange}
             inputProps={{ "aria-label": "secondary checkbox" }}
-          />
+          /> */}
           <div className="messages">
             {messageList.map((val, key) => {
               return (
@@ -114,7 +116,7 @@ function App() {
           <div className="messageInputs">
             <input
               type="text"
-              placeholder="Message..."
+              placeholder="Enter your text here"
               onChange={(e) => {
                 setMessage(e.target.value);
               }}

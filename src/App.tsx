@@ -67,12 +67,14 @@ function App() {
   };
   return (
     <div className="App">
+      <p className="head">Get To Know Real Emotions Behind A Text! </p>
       {!loggedIn ? (
         <div className="logIn">
           <div className="inputs">
-            <input
+            <input required
               type="text"
               placeholder="Name..."
+              
               onChange={(e) => {
                 setUserName(e.target.value);
               }}
@@ -80,12 +82,13 @@ function App() {
             <input
               type="number"
               placeholder="Room..."
+              required
               onChange={(e) => {
                 setRoom(e.target.value);
               }}
             />
           </div>
-          <button onClick={connectToRoom}>Enter Chat</button>
+        <button onClick={connectToRoom} style={{fontFamily: 'Montserrat'}}>Start Talking!</button>
         </div>
       ) : (
        
@@ -112,8 +115,8 @@ function App() {
               );
             })}
           </div>
-
           <div className="messageInputs">
+            
             <input
               type="text"
               placeholder="Enter your text here"
@@ -121,7 +124,7 @@ function App() {
                 setMessage(e.target.value);
               }}
             />
-            <button onClick={sendText}>Send</button>
+            <button onClick={sendText} >Send</button>
           </div>
         </div>
       )}

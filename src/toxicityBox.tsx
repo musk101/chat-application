@@ -1,6 +1,6 @@
 
 import {Prediction} from './ToxicityModel';
-import React, { useState, useEffect } from "react";
+import React from "react";
   
   export default function ToxicityBox({predictions} : {predictions :Prediction}){
       console.log(predictions)
